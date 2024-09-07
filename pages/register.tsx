@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Notification } from "../components/NotificationStyles"; // import error styles
-
+import {Inter} from "next/font/google"
+const inter = Inter({ subsets: ["latin"] });
 const FutureMDForm: React.FC = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -303,6 +304,7 @@ const FutureMDForm: React.FC = () => {
               style={{
                 marginLeft: "10px",
                 cursor: "pointer",
+                accentColor: "#00ad06",
               }}
             />
           </label>
@@ -324,6 +326,7 @@ const FutureMDForm: React.FC = () => {
               style={{
                 marginLeft: "10px",
                 cursor: "pointer",
+                accentColor: "#00ad06",
               }}
             />
           </label>
